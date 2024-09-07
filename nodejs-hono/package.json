@@ -1,0 +1,18 @@
+{
+  "name": "nodejs-hono",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "pkgroll",
+    "start": "node ./dist/index.mjs"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.12.2",
+    "hono": "^4.5.11"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.17",
+    "pkgroll": "^2.4.2",
+    "tsx": "^4.7.1"
+  },
+  "bin": "./dist/index.mjs"
+}
