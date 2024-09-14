@@ -1,17 +1,23 @@
 {
   "name": "nodejs-hono",
+  "type": "module",
   "scripts": {
     "dev": "tsx watch src/index.ts",
     "build": "pkgroll",
-    "start": "node ./dist/index.mjs"
+    "start": "node ./dist/index.mjs",
+    "test": "jest"
   },
   "dependencies": {
     "@hono/node-server": "^1.12.2",
     "hono": "^4.5.11"
   },
   "devDependencies": {
+    "@jest/globals": "^29.7.0",
+    "@types/jest": "^29.5.13",
     "@types/node": "^20.11.17",
+    "jest": "^29.7.0",
     "pkgroll": "^2.4.2",
+    "ts-jest": "^29.2.5",
     "tsx": "^4.7.1"
   },
   "bin": "./dist/index.mjs"
